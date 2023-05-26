@@ -16,7 +16,7 @@ public class TargetShooter : MonoBehaviour
                 Target target = hit.collider.gameObject.GetComponent<Target>();
                 if (target != null)
                 {
-                    Destroy(target.gameObject);
+                    target.Hit();
                 }
 
             }

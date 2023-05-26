@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    
 
-    void Update()
+
+    public void Hit()
     {
-
+        transform.position = TargetBounds.Instance.GetRandomPosition();
     }
 }
+ 
